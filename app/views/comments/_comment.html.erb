@@ -1,0 +1,5 @@
+<p>
+	<strong><%= comment.commenter %>:</strong><i>&nbsp&nbsp<%= comment.body %></i>
+	&nbsp
+	<%= link_to 'Delete Comment', [comment.article, comment], method: :delete, data: {confirm: 'Are you sure?'}, :class => 'cmd_links' %>
+</p>
